@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+/* Main */
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cover {
+    background-image: url(./assets/Background.png);
+    width: 45vw;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cover div {
+    background-color: green;
+    opacity: .65;
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cover .square {
+    font-weight: 900;
 }
 
-.App-link {
-  color: #61dafb;
+.mainContainer .page {
+    width: 55vw;
+    height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header */
+
+.headerContainer {
+    height: 5rem;
+    display: flex;
+    text-align: right;
+    display: block;
+    padding-right: 5rem;
+    padding-top: 1em;
+}
+
+.headerContainer p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.headerContainer span {
+    color: green;
+    font-weight: 500;
+    float: left;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+/* Pass00 */
+
+.pass00Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+    height: calc(100vh - 8rem)
+}
+
+.pass00Container .text {
+    margin-bottom: 2rem;
+}
+
+.pass00Button {
+    position: relative;
+    border: 1px solid green;
+    height: 6rem;
+    width: 80%;
+    max-width: 35rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.pass00Button .link {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.pass00Button > img {
+    position: absolute;
+    height: 3rem;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+.pass00Button > img:nth-child(2) {
+    position: absolute;
+    height: 1.5rem;
+    top: 2.25rem;
+    left: 1.75rem;
+}
+
+.pass00Button > .text {
+    position: relative;
+    left: 5rem;
+    padding-top: 1rem;
+    line-height: 1rem;
+    width: calc(100% - 8rem);
+}
+
+.pass00Button:hover {
+    background-color: rgb(231, 250, 231);
+    cursor: pointer;
+}
+
+/* .pass00Button:hover::after {
+    content: "->";
+    margin-left: -5rem;
+} */
+
+/* Pass00 */
+
+.pass01Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+    height: calc(100vh - 8rem)
+}
+
+.pass01Container .text {
+    margin-bottom: 2rem;
 }
